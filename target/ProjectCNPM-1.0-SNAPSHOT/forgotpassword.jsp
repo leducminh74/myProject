@@ -32,9 +32,8 @@
 
                 <div class="signin-form">
                     <h2 class="form-title">Forgot Password</h2>
-<%--                    14, 5.3. Hiển thị thông báo lên màn hình. --%>
                     <h4 class="${success.length() > 0 ? "text-success": "text-danger"}">${message}</h4>
-                    <form  class="login-form" id="login-form" action="forgotpassword" method="post">
+                    <form method="post" class="login-form" id="login-form" action="forgotpassword">
                         <div class="input-line">
                             <div class="form-group">
                                 <label ><i class="fas fa-user material-icons-name"></i></label>
@@ -51,7 +50,6 @@
                         </div>
 
                         <div class="form-group form-button">
-<%--                            3,4. Sau khi bấm send thông tin username và email người dùng nhập vào được gửi đến controller thông qua doPost(request,respone)--%>
                             <input type="submit" name="forgotpass" id="forgotpass" class="form-submit" value="Send"/>
                         </div>
                     </form>
